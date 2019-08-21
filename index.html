@@ -3,12 +3,24 @@
   <head>
     <meta charset="UTF-8">
     <title>Psychic Game by Ferd</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
+<div class="container col-8">
 
     <h1>Psychic Game</h1>
-    <h3>Guess the letter that I am thinking and type it on your keyboard</h3>
+    <div class="alert alert-primary" role="alert">
+    <h4>Guess the letter that I am thinking and type it on your keyboard</h4>
+    </div>
     <p>You have 9 turns to guess</p>
+
+    <p id="rightGuess"></p>
+    <p id="wrongGuess"></p>
+    <p id="numberGuess"></p>
+
+</div>
+
+
 
     <script type="text/javascript" src="assets/javascript/game.js"></script>
 
