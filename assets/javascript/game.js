@@ -19,23 +19,28 @@ document.onkeyup = function(event) {
  if (event.key === computerLetter) {
     rightGuess++;
  }
+ 
  else {
-    numberGuess--;
- }
-
- if(numberGuess = 0){
-    losses++;
+    wrongGuess++;
 }
+{numberGuess--}
 
 document.getElementById('rightGuess').innerHTML = "Right: " + rightGuess;
 document.getElementById('wrongGuess').innerHTML = "Wrong: " + wrongGuess;
-document.getElementById('numberGuess').innerHTML = "Number left: " + numberGuess;
+document.getElementById('numberGuess').innerHTML = "Guesses left: " + numberGuess;
 
 }
 
-console.log(rightGuess);
-console.log(wrongGuess);
-console.log(numberGuess);
+function result() {
+   if (wrongGuess === 0) {
+      document.getElementById('result').innerHTML = "You are the winner!";
+}
+}
+
+
+//console.log(rightGuess);
+//console.log(wrongGuess);
+// console.log(numberGuess);
 
 //document.getElementById('wins').innerHTML = "Wins: " + wins;
 //document.getElementById('losses').innerHTML = "losses: " + losses;
